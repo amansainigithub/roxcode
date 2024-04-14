@@ -7,6 +7,7 @@ import { BoardModeratorComponent } from './board-moderator/board-moderator.compo
 import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
+import { MatsidenavComponent } from './matsidenav/matsidenav.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -17,6 +18,8 @@ const routes: Routes = [
 { path: 'user', component: BoardUserComponent },
 { path: 'mod', component: BoardModeratorComponent },
 { path: 'admin', component: BoardAdminComponent },
+{ path: 'sidenav', component: MatsidenavComponent },
+
 ];
 
 @NgModule({

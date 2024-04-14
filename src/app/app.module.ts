@@ -12,6 +12,9 @@ import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatsidenavComponent } from './matsidenav/matsidenav.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +25,16 @@ import { HomeComponent } from './home/home.component';
     BoardAdminComponent,
     BoardModeratorComponent,
     ProfileComponent,
-    HomeComponent
+    HomeComponent,
+    MatsidenavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    MatSidenavModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]

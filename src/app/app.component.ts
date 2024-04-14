@@ -7,6 +7,7 @@ import { TokenStorageService } from './_services/token-storage.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  showFiller = false;
   title = 'JET-ANGULAR-2';
 
   private roles: string[] = [];
