@@ -8,12 +8,18 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { AboutComponent } from './components/about/about.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     AboutComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,9 +27,13 @@ import { AboutComponent } from './components/about/about.component';
     FormsModule,
     HttpClientModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatDividerModule,
+    MatIconModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
